@@ -1,0 +1,858 @@
+@media only screen{
+    /* Глобальные настройки стилей */
+    *{
+        padding: 0;
+        margin: 0;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+    a, span, i, h1, h2, h3, h4, h5, p{
+        word-break: normal;
+    }
+    h1,h2,h3{
+        color: #222;
+    }
+    p{
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    span{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 900;
+    }
+    a{
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: none;
+    }
+    li{
+        font-family: 'Ubuntu', sans-serif;
+        list-style: none;
+    }
+    /* Общие стили классов */
+    .wrap_title{
+        width: 40%;
+        margin: 0 auto;
+        background: #343148;
+        border-radius: 2em 11em 1em 15em;
+        padding: 1rem;
+    }
+    .wrap_title h2{
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* Классы отступов */
+    .mt3{
+        margin-top: 3em;
+    }
+    .mt5{
+        margin-top: 5em;
+    }
+    .otricalmb5{
+        margin-bottom: -5rem;
+    }
+    .M-mt4{
+        margin-top: -4.2em;
+        clear: both;
+    }
+    .p1{
+        padding: 1em;
+    }
+    .vp05{
+        padding: 0.5rem;
+    }
+    .vp1{
+        padding: 0.25rem;
+    }
+    .vp3{
+        padding: 3rem;
+    }
+    .mb3{
+        margin-bottom: 3em;
+    }
+    .mb5{
+        margin-bottom: 5em;
+    }
+    .mtm4{
+        margin-top: -4em!important;
+    }
+    .mr3{
+        margin-right: 3em;
+    }
+    .ml3 {
+        margin-left: 3em;
+    }
+
+    .w50{
+        width: 50%;
+    }
+    .w45{
+        width: 45%!important;
+    }
+    .mt-m3{
+        margin-top: -2.5rem!important;
+    }
+    .mb1{
+        margin-bottom: 1em;
+    }
+
+    /* Эффекты наведения курсора */
+    div.cb_menu ul.menu_list a li i:hover{
+        color: #fb8989;
+    }
+    .top_panel button.w3-button:hover{
+        background-color: #ffffff00!important;
+    }
+    .pallalelogramm i:hover{
+        color: #fde99f;
+        background: #343148;
+    }
+    .w3-button:hover {
+        color: #fff!important;
+        background-color: #f58888!important;
+        font-weight: bolder;
+        transition: 0.5s;
+    }
+
+    .new_post p a:hover{
+        color: #f58888;
+    }
+
+    .auth form p a:hover, .reg form p a:hover{
+        color: #f58888;
+    }
+
+    /* Фокусировка */
+    .w3-button:focus {
+        outline: none;
+    }
+
+    /* Стили обёртки '.wrapper' */
+    html, body{
+        height: 100%;
+    }
+    div.wrapper{
+        min-height: 685px;
+    }
+
+    /* Меню desctop */
+    div.cb_menu{
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        color: #fff;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    div.cb_menu h2{
+        font-size: 1.2em;
+    }
+    div.cb_menu h2.prew_page{
+        color: #fff;
+    }
+    div.cb_menu ul.menu_list{
+        display: block;
+        margin: 0 auto;
+    }
+    div.cb_menu ul.menu_list a{
+        margin-top: 4rem;
+        display: block;
+    }
+    div.cb_menu ul.menu_list a li i{
+        font-size: 3rem;
+        color: #c4cce0;
+    }
+    div.cb_menu ul.menu_list a li i.active{
+        color: #fb8989
+    }
+
+    /* Верхняя панель, меню пользователя */
+    .top_panel{
+        background: #f7f7f7;
+        height: 4em;
+        position: fixed;
+        z-index: 999999;
+    }
+    .top_panel h2{
+        font-family: 'Alfa Slab One', cursive;
+    }
+    .top_panel button i{
+        font-size: 3rem;
+        color: rgb(98, 95, 233);
+    }
+    .user_menu{
+        display: none;
+        right: 0;
+        z-index: 9999999999999999999;
+    }
+    .user_menu button.w3-bar-item{
+        display: block;
+        text-align: right;
+    }
+    button.w3-bar-item {
+        background: #343148;
+        color: #fff;
+    }
+    a.w3-bar-item{
+        color: #343148;
+        font-size: 1.25em;
+    }
+
+    /* Стили для основной контентной части/блока */
+    div.content_container{
+        padding: 5%;
+    }
+    .l_animate{
+        background: url('../img/animate_fone.gif') no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+    .l_animate .animater h1, .l_animate .animater p{
+        color: #fff;
+        font-weight: 900;
+        padding: 1.12em;
+    }
+    .l_animate .animater h1{
+        background-color: #343148bd;
+        border-radius: 2em 2em 0em 2em;
+    }
+    .l_animate .animater p{
+        border-radius: 2em 2em 2em 0em;
+        background-color: #f58888d6;
+    }
+    img.w90{
+        width: 90%;
+    }
+    button.prew-btn{
+        margin-right: 0.5em;
+    }
+    .w3-button{
+        font-weight: bolder;
+    }
+    .w3-card h3{
+        font-weight: 700;
+    }
+    .container_instruct{
+        position: relative;
+    }
+    .pallalelogramm{
+        background-color: #f58888;
+        transform: skew(170deg);
+        position: absolute;
+        left: 5rem;
+        right: 5rem;
+    }
+    .pallalelogramm h2, .pallalelogramm h3{
+        font-weight: bolder;
+        color: #fff;
+    }
+    .pallalelogramm i{
+        display: block;
+        color: #343148;
+        font-size: 3.5em;
+        border-radius: 10rem;
+        background: #fde99f;
+        padding: 0.23em;
+        transition: 0.5s;
+        width: 70%;
+        margin: 0 auto;
+    }
+        
+
+    .container_blog{
+        margin-top: 14rem;
+    }
+    .p_main{
+        position: relative;
+        height: 34em;
+    }
+    .p_main footer{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .container_blog img{
+        width: 100%;
+    }
+    .blog-prew-title{
+        font-size: large;
+        font-weight: 700;
+    }
+    .container_blog i{
+        display: block;
+        font-size: 1.3em;
+        top: 0;
+        bottom: 0;
+    }
+    .btl_font_large{
+        font-size: 1.2em;
+    }
+
+    .container_faq .w3-card h3{
+        color: #fff;
+    }
+    .new_post_blog {
+        position: fixed;
+        right: 0rem;
+        top: 4em;
+        bottom: 0;
+        background: #c4cce04a;
+        padding: 1em;
+        /* border-radius: 1rem; */
+    }
+    .new_post p a{
+        font-size: 0.89em;
+        color: #343148;
+    }
+
+
+    .card-icon{
+        background: #f5f5f5;
+    }
+    .card-icon-mess{
+        font-size: 2em;
+        display: block!important;
+        text-align: center;
+        padding: 0.5em;
+        cursor: pointer;
+    }
+    
+    /*  */
+    .mt1{
+        margin-top: 1em;
+    }
+    
+    /*  */
+    .plugin-card li div:hover, .color-pepe{
+        background-color: #fb8989;
+    }
+    .moving{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-left: 2.6%;
+        margin-top: 2.5%;
+    }
+    .scroll{
+        overflow-y: scroll;
+    }
+    .h32{
+        height: 32em;
+    }
+    .moving_drop.over{
+        border: 2px dashed #fb8989;
+    }
+    
+    
+    .type_mess i{
+        font-size: 3em;
+        width: 10%;
+        color: #fff;
+        background-color: #343148;
+        border-radius: 0.1em;
+        margin-bottom: 0.3em;
+    }
+    .fa-folder{
+        margin-top: 0.3em;
+        font-size: 2.5em;
+        color: #ff7f24;
+    }
+    .fa-play, .fa-stop, .fa-ellipsis-v{
+        cursor: pointer;
+        margin-top: 0.5em;
+        font-size: 2em;
+    }
+    .fa-play{
+        color: #625fe9;
+    }
+    .fa-stop{
+        color: #fb8989;
+    }
+    .fa-ellipsis-v:hover{
+        background: #c4cce0;
+        width: 40%;
+        border-radius: 1rem;
+        padding: 0.1em;
+        color: #7d7e82;
+    }
+
+    .play_forms_item{
+        margin-top: 0.3em;
+    }
+    .play_forms_item form button{
+        width: 30%;
+        height: 3em;
+        margin: 0 auto;
+        border: solid 0em;
+        background: white;
+    }
+    .play_forms_item form button i{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .info_disclosure:hover{
+        color:#625fe9;
+        cursor: pointer;
+    }
+    .bot_info{
+        background: #e3e5ea;
+    }
+    
+    .fa-check-circle{
+        color: #49bf49;
+    }
+    .fa-times-circle{
+        color: #ea2b2b;
+    }
+    
+    .list_messanges li{
+        color: #625fe9;
+    }
+    .checks{
+        display: block;
+        height: 1.35em;
+    }
+    .check_plugins{
+        height: 0.8em;
+        margin-top: 0.6rem;
+    }
+
+
+    .auth form p a, .reg form p a{
+        color: #343148;
+    }
+    .auth form, .reg form{
+        margin-bottom: 5rem;
+        background: rgb(68,64,94);
+        background: linear-gradient(45deg, rgba(52, 49, 72, 0.73) 0%, rgb(155, 166, 193) 36%, rgba(245,136,136,1) 100%);
+    }
+    .auth form input, .reg form input{
+        border-radius: 0.4rem;
+    }
+
+
+    .faq_block button h3{
+        color: #fff;
+    }
+
+
+    .user_photo{
+        display: block;
+        width: 60%;
+    }
+    .status{
+        background: #c4cce0;
+        padding: 2em;
+    }
+
+
+    .settings_profile .edit i{
+        font-size: 0.8em;
+        color: #f58888;
+        cursor: pointer;
+    }
+    .list{
+        padding: 0.3rem;
+        background: #343148;
+        margin-right: 1em;
+    }
+
+
+    .switch{
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 2.2rem;
+    }
+    .switch input {
+        display:none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #343148;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #f58888;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #f58888;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 5rem;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
+    /* ##### Page: 404 */
+    .error404{
+        margin-top: 6rem;
+    }
+    .error404 h1{
+        font-size: 7em;
+        color: #343148;
+    }
+    .error404 i{
+        color: #f58888;
+    }
+    .error404 h2{
+        font-size: 3em;
+        color: #343148;
+    }
+
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .tdw105{
+        width: 105%;
+    }
+
+    .p_main {
+        height: 32em;
+    }
+
+    .lm3{
+        margin-left: -3em;
+    }
+    /* .moving{
+        width: 100%!important;
+        display: block;
+    } */
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .tw110{
+        width: 110%;
+    }
+    .mNone{
+        display: none;
+    }
+    .pallalelogramm{
+        left: 3rem;
+        right: 3rem;
+    }
+    .pallalelogramm i {
+        font-size: 3em;
+    }
+    .pallalelogramm h3{
+        font-size: 1.4em;
+        padding: 0.5rem;
+    }
+    .container_blog{
+        margin-top: 15rem;
+    }
+    .p_main{
+        position: unset;
+        height: unset;
+    }
+    .p_main footer {
+        bottom: unset;
+        position: unset;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 967px) {
+    p {
+        font-size: 1.3rem;
+    }
+    .w3-col.m6, .w3-half {
+        width: 100%;
+    }
+    .prew_page{
+        display: none;
+    }
+    div.cb_menu ul.menu_list {
+        display: block;
+        margin: 0 auto;
+        margin: -2.7em;
+    }
+    div.cb_menu ul.menu_list a {
+        margin-top: 3rem;
+    }
+    div.cb_menu ul.menu_list a li i {
+        font-size: 2rem;
+    }
+    
+
+    .l_animate .animater h1 {
+        background-color: #343148bd;
+        border-radius: 2em 2em 0em 2em;
+        font-size: x-large;
+    }
+    .tlw120{
+        width: 120%;
+    }
+    .mNone{
+        display: none;
+    }
+    .pallalelogramm{
+        left: 3rem;
+        right: 3rem;
+    }
+    .pallalelogramm h3{
+        font-size: 1.7em;
+        padding: 0.5rem;
+    }
+    .container_blog{
+        margin-top: 20rem;
+    }
+    .p_main{
+        position: unset;
+        height: unset;
+    }
+    .p_main footer {
+        bottom: unset;
+        position: unset;
+    }
+
+    .tm5{
+        margin-top: 5%;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    h1{
+        font-size: 1.65em;
+        font-weight: 900;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+    div.cb_menu{
+        z-index: 99999;
+        background-color: #0d0d0e;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        height: 4rem;
+        bottom: 0;
+        top: auto;
+    }
+    div.cb_menu h2{
+        display: none;
+    }
+    div.cb_menu ul.menu_list{        
+        display: flex;
+    }
+    div.cb_menu ul.menu_list a {
+        display: block;
+        margin: 0 auto;
+        margin-top: -1em;
+    }
+    div.cb_menu ul.menu_list a li i {
+        font-size: 2rem;
+
+    }
+
+    div.content_container {
+
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        margin: 0 auto;
+        /* overflow: hidden; */
+    }
+
+    .mw100{
+        width: 100%;
+    }
+    .w89{
+        width: 91%!important;
+    }
+    .container_instruct{
+        margin-top: 6rem;
+    }
+    .pallalelogramm{
+        background-color: #343148;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        transform: none;
+        position: absolute;
+    }
+    .pallalelogramm i{
+        font-size: 1.99em;
+        padding: 0.1em;
+        width: 36%;
+
+    }
+
+    .container_blog{
+        margin-top: 34rem;
+    }
+    .p_main{
+        position: unset;
+        height: unset;
+    }
+    .p_main footer {
+        bottom: unset;
+        position: unset;
+    }
+    .blog-prew-title {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    span.w3-left {
+        font-size: 1.2em;
+    }
+    .container_blog i {
+        font-size: 1.4em;
+        margin-top: 0.2rem;
+    }
+    .wrap_title {
+        width: 95%;
+        padding: 0.25rem;
+    }
+
+
+    .error404 h1 {
+        font-size: 6em;
+        background: #c4cce0;
+        border-radius: 12rem;
+    }
+    .error404 h2 {
+        font-size: 2em;
+    }
+
+    
+    .my_bots p {
+        font-size: 1.1rem;
+    }
+    .my_bots button {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .fa-ellipsis-v:hover {
+        width: 62%;
+    }
+
+
+    form p{
+        font-size: 1.3rem;
+    }
+
+
+    .user_photo {
+        display: block;
+        width: 80%;
+    }
+    input[type='file'] {
+        display: none;  
+      }
+      input[type='file'] {
+        display: block;  
+        color: #eee0;
+      }
+    .profile h3{
+        font-size: 1.14em;
+    }
+    .profile p{
+        font-size: 1em;
+    }
+
+    .list{
+        margin-left: -1.2em;
+        margin-bottom: 0.5rem;
+    }
+    .list button{
+        padding: 0.4em!important;
+        margin-top: 0.5rem;
+    }
+
+
+    /* Отступы */
+    .vp3 {
+        padding: 0.99rem;
+    }
+    .mb10{
+        margin-bottom: 2%;
+    }
+    .mw100{
+        width: 100%!important;
+    }
+    .tm5{
+        margin-top: 3%;
+    }
+    .mt10m{
+        margin-top: -8rem !important;
+    }
+    .pt-b31{
+        padding-top: 31rem !important;
+    }
+    .vp2{
+        padding: 2em;
+    }
+    .mr3{
+        margin-right: 0em;
+    }
+
+    
+    /* Мобильные стили наведения курсора */
+    .pallalelogramm i:hover{
+        background: #f58888;
+    }
+
+
+    /* Отмена стилей */
+    .sNone{
+        display: none!important;
+    }
+    .l_animate .animater{
+        background: none;
+    }
+    .l_animate .animater h1, .l_animate .animater p{
+        color: #222;
+        font-weight: bolder;
+        padding: 0;
+    }
+    .l_animate .animater h1{
+        background: none;
+        border-radius: 0;
+        color: #fff;
+    }
+    .l_animate .animater p{
+        border-radius: 0;
+        background: none;
+    }
+
+    .tr{
+        display: block;
+        margin-bottom: 4rem;
+    }
+        
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CosmoBot</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Ubuntu&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/construct.css">
+  </head>
+  <body>
+    <div class="w3-col l12 m12 s12">
+      <div class="w3-row">
+        <div class="w3-col l1 m2 s12 w3-left w3-2019-eclipse cb_menu">
+          <h2 class="w3-center prew_page">Главная</h2>
+          <br>
+          <ul class="menu_list w3-center">
+            <a href="index.html">
+              <li><i class="fas fa-home"></i>
+              </li>
+            </a>
+            <a href="construct.html">
+              <li><i class="fas fa-th"></i></li>
+            </a>
+            <a href="blog.html">
+              <li>
+                <i class="fas fa-align-left"></i></li>
+            </a>
+            <a href="faq.html">
+              <li>
+                <i class="fas fa-question"></i></li>
+            </a>
+          </ul>
+        </div>
+        <div class="w3-col l11 m10 s12 w3-right cb_main">
+          <div class="wrapper">
+            <div class="w3-sidebar w3-bar-block w3-animate-right w3-border-left user_menu" id="SideNav">
+              <button class="w3-bar-item w3-large" onclick="w3_close()">&times;</button>
+              <a class="w3-bar-item w3-button" href="profile.html">Профиль</a>
+              <a class="w3-bar-item w3-button" href="user_bot.html">Мои боты</a>
+              <a class="w3-bar-item w3-button" href="settings.html">Настройки</a>
+              <a class="w3-bar-item w3-button" href="404.html">Выход</a>
+            </div>
+            <div class="w3-container w3-col l12 m12 s12 top_panel">
+              <div class="w3-col l10 m9 s9 w3-left">
+                <div class="w3-row">
+                  <h2 class="w3-center">CosmoBot</h2>
+                </div>
+              </div>
+              <div class="w3-col l2 m3 s3 w3-right M-mt4">
+                <div class="w3-row">
+                  <button class="btn w3-button w3-xlarge" onclick="w3_open()"><i class="fas fa-user-circle"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3-col l12 m12 s12 content_container my_bots mt3">
+              <div class="wrap_title mt3 mb5">
+                <h2 class="w3-center">Мои боты</h2>
+              </div>
+              <br>
+
+              <div class="w3-card w3-col l12 m12 s12 vp1 mb05 w3-center">
+                <div class="w3-col l2 m2 s2"><i class="fas fa-folder"></i></div>
+                <div class="w3-col l5 m5 s5"><h3 class="info_disclosure">
+                  Виталий Брукс 
+                  <i class="fas fa-angle-up"></i>
+                  
+                  <!-- else -->
+                  <!-- <i class="fas fa-chevron-down"></i> -->
+                </h3></div>
+                <div class="w3-col l2 m2 s2"><i class="fas fa-play"></i></div>
+                <div class="w3-col l2 m2 s2"><i class="fas fa-stop"></i></div>
+                <div class="w3-col l1 m1 s1"><i class="fas fa-ellipsis-v"></i></div>
+
+
+                <div id="info_brooks" class="w3-card w3-col  l12 m12 s12 vp1 bot_info">
+                  <b><p>Виталий Брукс</p></b>
+                  <div class="w3-col l6 m6 s6">
+                    <p>Статус: 
+                      <i class="fas fa-check-circle"></i>
+                      <!-- <i class="fas fa-times-circle"></i></p>  -->
+                  </div>
+                  <div class="w3-col l6 m6 s6">
+                    <p>Мессенджеры:</p>
+                    <ul class="list_messanges">
+                      <li>#Вконтакте</li>
+                      <li>#Telegramm</li>
+                      <li>#Whatsup</li>
+                    </ul>
+                  </div>
+                  <br>
+                  <div class="w3-col l12 m12 s12">
+                    <button class="btn w3-button w3-large w3-2019-eclipse">Доступно обновление</button>
+                  </div>
+                </div>
+
+
+              </div>
+              
+              <div class="w3-card w3-col l12 m12 s12 vp1 mb05 w3-center">
+                <div class="w3-col l2 m2 s2"><i class="fas fa-folder"></i></div>
+                <div class="w3-col l5 m5 s5"><h3 class="info_disclosure">
+                  Квест дтп
+                  <!-- <i class="fas fa-angle-up"></i> -->
+                  <!-- else -->
+                  <i class="fas fa-chevron-down"></i>
+                </h3></div>
+                <div class="w3-col l2 m2 s2"><i class="fas fa-play"></i></div>
+                <div class="w3-col l2 m2 s2"><i class="fas fa-stop"></i></div>
+                <div class="w3-col l1 m1 s1"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+              
+              <div class="w3-card w3-col l12 m12 s12 vp1 mb05  w3-center">
+                <div class="w3-col l2 m2 s2"><i class="fas fa-folder"></i></div>
+                <div class="w3-col l5 m5 s5"><h3 class="info_disclosure">
+                  Alpha Count
+                  <!-- <i class="fas fa-angle-up"></i> -->
+                  <!-- else -->
+                  <i class="fas fa-chevron-down"></i>
+                </h3></div>
+                <div class="w3-col l2 m2 s2"><i class="fas fa-play"></i></div>
+                <div class="w3-col l2 m2 s2"><i class="fas fa-stop"></i></div>
+                <div class="w3-col l1 m1 s1"><i class="fas fa-ellipsis-v"></i></div>
+              </div>
+
+                
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <script src="https://kit.fontawesome.com/8b9970d558.js" crossorigin="anonymous"></script>
+    <script src="assets/js/user_menu.js"></script>
+    <script src="assets/js/moving.js"></script>
+    <script src="assets/js/ofelia.js"></script>
+  </body>
+</html>
